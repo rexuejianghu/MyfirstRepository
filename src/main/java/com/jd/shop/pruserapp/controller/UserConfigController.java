@@ -15,9 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserConfigController {
 
     /**
-     * @Title:
-     * @Description: 初始化
-     * @author
+     * @Description: 用户jenkins测试
+     * @author xingzhiyan
      * @date 2018年10月14日 上午11:39:48
      */
     @ApiOperation(value = "用户测试jenkins构建", notes = "测试jenkins构建")
@@ -29,6 +28,6 @@ public class UserConfigController {
     @RequestMapping(value = "/userInfor/{id}", method = RequestMethod.GET)
     public String userJenkinstest(@PathVariable(name="id")String id) {
         System.out.println("测试jenkins构建");
-        return "测试jenkins构建,id为"+id;
+        return "测试jenkins构建,接收到的id为"+id;
     }
 }
