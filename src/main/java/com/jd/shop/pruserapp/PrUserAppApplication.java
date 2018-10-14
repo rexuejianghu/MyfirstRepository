@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class PrUserAppApplication {
 
     public static void main(String[] args) {
-        System.out.println("***************8088*******************");
+        System.out.println("***************8888*******************");
         SpringApplication.run(PrUserAppApplication.class, args);
     }
 
