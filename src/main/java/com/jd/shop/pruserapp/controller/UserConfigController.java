@@ -21,6 +21,7 @@ public class UserConfigController {
      */
     @ApiOperation(value = "用户测试jenkins构建", notes = "测试jenkins构建")
     @ApiImplicitParams({
+            @ApiImplicitParam(name="id",value = "id",required = true,dataType = "String"),
             @ApiImplicitParam(name = "Accept", value = "接收属性", required = true, dataType = "String", paramType = "header", defaultValue = "application/json"),
             @ApiImplicitParam(name = "Accept-Charset", value = "接收字符集", required = true, dataType = "String", paramType = "header", defaultValue = "utf-8"),
             @ApiImplicitParam(name = "Content-Type", value = "内容类型", required = true, dataType = "String", paramType = "header", defaultValue = "application/json; charset=UTF-8")
